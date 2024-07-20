@@ -1,0 +1,554 @@
+/* Keyframes for the animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f2f2f2;
+}
+
+.burger {
+    display: none; /* Initially hidden on larger screens */
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.burger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.section1 {
+    height: 90vh;
+    background-image: url(https://images03.nicepagecdn.com/c461c07a441a5d220e8feb1a/79e76ea69f5951819972d9d5/uyj-min.jpg);
+    background-position: 30% 50%;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section1.animate {
+    animation: fadeIn 1s ease-in-out forwards; /* Faster animation */
+}
+
+.imtext1, .imtext2 {
+    background-color: white;
+    color: black;
+    width: fit-content;
+    padding: 22px;
+    margin-left: 80px;
+}
+
+.imtext1.animate, .imtext2.animate {
+    animation: slideInFromRight 1s ease-in-out forwards; /* Faster animation */
+}
+
+.imtext1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.imtext2 {
+    background-color: black;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.section2 {
+    height: 130vh;
+    background-color: #fff4ff;
+    padding-top: 90px;
+    position: relative;
+}
+
+.section2.animate {
+    animation: fadeIn 1.25s ease-in-out forwards; /* Faster animation */
+}
+
+.section2 h1 {
+    font-weight: bold;
+    font-size: 70px;
+    margin-left: 95px;
+    color: #CD825B;
+    font-family: 'Playfair Display', serif;
+}
+
+.section2 h1.animate {
+    animation: slideInFromLeft 1.5s ease-in-out forwards; /* Faster animation */
+}
+
+.nk {
+    position: relative;
+    height: 400px;
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/218957/images/rettt-min.jpg);
+    background-size: cover;
+    z-index: 3; /* Убедитесь, что значение z-index выше, чем у других элементов */
+
+}
+
+.nk.animate {
+    animation: slideInFromRight 1.75s ease-in-out forwards; /* Faster animation */
+        z-index: 2;
+
+}
+
+.box1 {
+    position: absolute;
+    top: 290px;
+    left: 88vh;
+    height: 220px;
+    width: 85vh;
+    padding-left: 30px;
+    padding-top: 25px;
+    background-color: #efe5db;
+    z-index: 2;
+
+}
+
+.box1.animate {
+    animation: slideInFromLeft 2s ease-in-out forwards; /* Animation for box1 */
+}
+
+.box1 span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #CD825B;
+}
+
+.color{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-color: #CD825B;
+    z-index: 1;
+
+}
+
+.text1{
+    height: fit-content;
+    width: 330px;
+    position: absolute;
+    left: 120vh;
+    top: 80vh;
+    font-size: 17px;
+
+}
+.text1 span{
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+.text1 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #CD825B;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.text1 a:hover {
+    background-color: #AB6340;
+}
+.color.animate{
+    animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+
+
+
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+.container h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+.container p{
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #CD825B;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 250px;
+    flex: 1;
+}
+
+.service img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+}
+
+.service h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service .price {
+    font-size: 1rem;
+    color: #CD825B;
+    font-weight: bold;
+}
+
+
+
+.custom-footer-section {
+    background-color: #f8f1eb;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    z-index: 2;
+}
+
+.custom-left-content {
+    flex: 1;
+    color: #CD825B;
+}
+.custom-left-content h2 {
+    font-size: 36px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.custom-left-content p {
+    font-size: 22px;
+}
+.custom-footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.custom-social-icons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.custom-social-icons a {
+    color: #CD825B;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.custom-right-content {
+    flex: 1;
+    text-align: right;
+    position: relative;
+    z-index: 3;
+}
+
+.custom-right-content img {
+    max-width: 100%;
+    height: 88vh;
+    border-radius: 10px;
+    margin-right: 50px;
+    position: relative;
+    z-index: 3;
+}
+
+.guyn2{
+    height: 120vh;
+    background-color: #CD825B;
+    position: absolute;
+    width: 280px;
+    left: 40%;
+    z-index: 1;
+}
+
+
+
+
+.registration-section {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    background-color:#f8f8ef;
+
+}
+
+.registration-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #CD825B;
+    font-family: 'Playfair Display', serif;
+}
+
+.registration-section .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    z-index: 9999; /* Увеличиваем z-index для .container */
+    position: relative; /* Указываем позицию */
+}
+
+.registration-section form .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-section form label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.registration-section form input[type="text"],
+.registration-section form input[type="email"],
+.registration-section form input[type="tel"],
+.registration-section form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.registration-section form input[type="text"]:focus,
+.registration-section form input[type="email"]:focus,
+.registration-section form input[type="tel"]:focus,
+.registration-section form input[type="password"]:focus {
+    border-color: #CD825B;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(205, 130, 91, 0.25);
+}
+
+.registration-section form .btn-primary {
+    background-color: #CD825B;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-section form .btn-primary:hover {
+    background-color: #AB6340;
+}
+
+/* Styling for the recommended hint */
+.registration-section form .hint {
+    font-size: 0.8rem;
+    color: #6c757d;
+    display: block;
+    margin-top: 4px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(5px);
+}
+
+.registration-section form input:focus + .hint,
+.registration-section form input:not(:placeholder-shown) + .hint {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+.security-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #f9f4f1;
+    padding: 50px 0;
+}
+
+.security-left {
+    background-color: #f9f4f1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.security-left h2 {
+    font-size: 36px;
+    color: #a65f3b;
+    margin-bottom: 20px;
+}
+
+.security-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.security-right {
+    background-color: white;
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #f9f4f1;
+    box-shadow: -10px 0 10px -10px rgba(0, 0, 0, 0.1);
+}
+
+.security-item {
+    margin-bottom: 30px;
+}
+
+.quote-icon {
+    font-size: 36px;
+    color: #a65f3b;
+    margin-right: 10px;
+}
+
+.security-item p {
+    display: inline;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.author {
+    display: block;
+    margin-top: 10

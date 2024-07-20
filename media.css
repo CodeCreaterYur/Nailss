@@ -1,0 +1,364 @@
+
+/* Стили для больших компьютеров */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .box1 {
+    position: absolute;
+    top: 290px;
+    left: 75vh;
+    height: 220px;
+    width: 70vh;
+    padding-left: 30px;
+    padding-top: 25px;
+    background-color: #efe5db;
+    z-index: 2;
+
+    }
+    .box1.animate {
+        animation: slideInFromLeft 2s ease-in-out forwards; /* Animation for box1 */
+    }
+
+    .box1 span {
+        font-size: 40px;
+        font-weight: bold;
+        color: #CD825B;
+    }
+    .text1{
+        height: fit-content;
+        width: 330px;
+        position: absolute;
+        left: 100vh;
+        top: 80vh;
+        font-size: 17px;
+        z-index: 9;
+
+    }
+    .color{
+        position: absolute;
+        top: 350px;
+        left: 350px;
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        background-color: #CD825B;
+        z-index: 1;
+
+    }
+    }
+
+
+
+
+
+
+    /* Стили для небольших компьютеров */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+            .box1 {
+        position: absolute;
+        top: 280px;
+        left: 45vh;
+        height: 220px;
+        width: 70vh;
+        padding-left: 30px;
+        padding-top: 25px;
+        background-color: #efe5db;
+        z-index: 2;
+
+    }
+    .box1.animate {
+        animation: slideInFromLeft 2s ease-in-out forwards; /* Animation for box1 */
+    }
+
+    .box1 span {
+        font-size: 40px;
+        font-weight: bold;
+        color: #CD825B;
+    }
+    .text1{
+        height: fit-content;
+        width: 500px;
+        position: absolute;
+        left: 15vh;
+        top: 110vh;
+        font-size: 17px;
+        z-index: 9;
+        border: 1px solid red;
+
+
+    }
+    .color{
+        position: absolute;
+        top: 350px;
+        left: 350px;
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        background-color: #CD825B;
+        z-index: 1;
+
+    }
+    .section2 {
+    height: 150vh;
+    background-color: #fff4ff;
+    padding-top: 90px;
+    position: relative;
+}
+}
+
+/* Стили для планшетов */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .box1 {
+        position: absolute;
+        top: 475px;
+        left: 30vh;
+        height: 200px;
+        width: 65vh;
+        padding-left: 30px;
+        padding-top: 25px;
+        background-color: #efe5db;
+        z-index: 2;
+
+    }
+    .box1.animate {
+        animation: none; /* Animation for box1 */
+    }
+    .animate{
+        animation: none;
+
+    }
+
+    .box1 span {
+        font-size: 40px;
+        font-weight: bold;
+        color: #CD825B;
+    }
+    .text1{
+        height: fit-content;
+        width: 500px;
+        position: absolute;
+        left: 15vh;
+        top: 105vh;
+        font-size: 17px;
+        z-index: 9;
+        border: 1px solid green;
+
+
+    }
+    .color{
+        position: absolute;
+        top: 350px;
+        left: 265px;
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        background-color: #CD825B;
+        z-index: 1;
+
+    }
+    .section2 {
+    height: 141vh;
+    background-color: #fff4ff;
+    padding-top: 90px;
+    position: relative;
+}
+.nk {
+    position: relative;
+    height: 250px;
+    width: 450px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/218957/images/rettt-min.jpg);
+    background-size: cover;
+    z-index: 3;
+
+}
+.nk.animate {
+    animation: slideInFromRight 1.75s ease-in-out forwards;
+    z-index: 2;
+
+}
+
+}
+
+/* Стили для телефонов */
+@media (max-width: 575.98px) {
+
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .section1 {
+        height: 95vh;
+        padding: 20px;
+        background-size: cover;
+        align-items: center;
+    }
+
+    .imtext1{
+        width: 36%;
+        margin-left: -270px;
+        margin-bottom: 10px;
+        padding: 20px;
+
+    }
+.imtext2 {
+    width: 90%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5); /* Белый фон с прозрачностью 50% */
+    color: black;
+    padding: 50px;
+}
+
+.imtext2 h1 {
+    opacity: 1; /* Заголовок не будет прозрачным */
+    background-color: transparent; /* Убедитесь, что фон заголовка прозрачный */
+    color: inherit; /* Цвет текста наследуется от родителя */
+}
+
+    .section2 {
+        height: auto;
+        padding: 20px;
+    }
+
+    .section2 h1 {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .nk {
+        height: 200px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .box1 {
+        position: relative;
+        top: auto;
+        left: auto;
+        height: auto;
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .box1 span {
+        font-size: 1.5rem;
+    }
+
+    .text1 {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .color {
+        display: none;
+    }
+
+    .custom-footer-section {
+        padding: 20px;
+    }
+
+    .custom-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .custom-left-content, .custom-right-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .custom-right-content img {
+        height: auto;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .registration-section .container {
+        width: 100%;
+        padding: 20px;
+    }
+        .cube {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px; /* Корректируем отступы */
+    }
+
+    .cube .col-md-3 {
+        width: 50%; /* Ширина 50% для двух элементов в ряд */
+        padding: 0 15px; /* Отступы для колонок */
+        box-sizing: border-box; /* Включаем padding в ширину */
+    }
+
+    .service {
+        text-align: center;
+    }
+
+    .service img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service h3 {
+        font-size: 1.2em;
+        margin: 10px 0 5px;
+    }
+
+    .service p.price {
+        font-size: 1em;
+        color: #CD825B;
+    }
+    .guyn2{
+        opacity: 0.3;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide nav links on smaller screens initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    nav ul.active {
+        display: flex; /* Show nav links when burger menu is active */
+    }
+
+    .burger {
+        display: block; /* Show burger menu icon */
+    }
+}
